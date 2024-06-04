@@ -33,7 +33,7 @@ async def main():
                 ui.image(avatar)
             text = ui.input(placeholder='message').on('keydown.enter', send) \
                 .props('rounded outlined input-class=mx-3').classes('flex-grow')
-        ui.markdown('simple chat app built by  [Prantik](https://www.instagram.com/prantik.medhi?igsh=MTB5Y2R0ZTVldTJ3ZA==)') \
+        ui.markdown('simple chat app built with [NiceGUI](https://nicegui.io)') \
             .classes('text-xs self-end mr-8 m-[-1em] text-primary')
 
     await ui.context.client.connected()  # chat_messages(...) uses run_javascript which is only possible after connecting
